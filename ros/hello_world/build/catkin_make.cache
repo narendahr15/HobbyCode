@@ -1,0 +1,2 @@
+first_package
+-DCATKIN_DEVEL_PREFIX=/home/manimoha/Documents/hobby/ros/hello_world/devel -DCMAKE_INSTALL_PREFIX=/home/manimoha/Documents/hobby/ros/hello_world/install -G Unix Makefiles

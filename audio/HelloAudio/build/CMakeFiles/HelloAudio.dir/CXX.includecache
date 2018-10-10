@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/manimoha/Documents/hobby/audio/HelloAudio/main.cpp
+cstdio
+-
+cstring
+-
+cstdint
+-
+cmath
+-
+iostream
+-
+sndfile.hh
+-
+

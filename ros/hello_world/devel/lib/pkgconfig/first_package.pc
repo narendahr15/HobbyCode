@@ -1,0 +1,8 @@
+prefix=/home/manimoha/Documents/hobby/ros/hello_world/devel
+
+Name: first_package
+Description: Description of first_package
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/manimoha/Documents/hobby/ros/hello_world/devel/lib 
+Requires: 

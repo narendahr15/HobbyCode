@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/hello_gl.dir/main.cpp.o  -o hello_gl -lGL -lGLU -lglut -lXmu -lXi 

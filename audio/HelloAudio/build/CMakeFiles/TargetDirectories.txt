@@ -1,0 +1,3 @@
+/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/edit_cache.dir
+/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/rebuild_cache.dir
+/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/HelloAudio.dir
