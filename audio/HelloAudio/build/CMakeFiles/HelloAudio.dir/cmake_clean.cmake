@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HelloAudio.dir/main.cpp.o"
+  "CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o"
+  "CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o"
+  "CMakeFiles/HelloAudio.dir/src/main.cpp.o"
   "HelloAudio.pdb"
   "HelloAudio"
 )

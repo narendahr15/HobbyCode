@@ -4,12 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/manimoha/Documents/hobby/audio/HelloAudio/main.cpp" "/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/HelloAudio.dir/main.cpp.o"
+  "/home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.cpp" "/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o"
+  "/home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.cpp" "/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o"
+  "/home/manimoha/Documents/hobby/audio/HelloAudio/src/main.cpp" "/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles/HelloAudio.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../HelloAudio"
+  "../include"
   )
 
 # Targets to which this target links.

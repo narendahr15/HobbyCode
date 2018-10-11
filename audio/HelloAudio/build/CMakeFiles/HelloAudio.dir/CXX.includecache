@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/manimoha/Documents/hobby/audio/HelloAudio/main.cpp
+../include/AudioHandler.h
+
+../include/GuiHandler.h
+
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.cpp
 cstdio
 -
 cstring
@@ -17,6 +21,30 @@ cmath
 -
 iostream
 -
+sndfile.hh
+-
+AudioHandler.h
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.h
+
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.cpp
+GuiHandler.h
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.h
+
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/main.cpp
+cstdio
+-
+cstring
+-
+cstdint
+-
+cmath
+-
+iostream
+-
+AudioHandler.h
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.h
+GuiHandler.h
+/home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.h
 sndfile.hh
 -
 

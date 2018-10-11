@@ -1,8 +1,6 @@
-
-cmake_minimum_required(VERSION 2.8.1)
+cmake_minimum_required(VERSION 3.0.2)
 
 project(HelloAudio)
-add_executable(HelloAudio main.cpp)
 
 set(CMAKE_CXX_FLAGS "-std=c++11")
 
@@ -16,6 +14,10 @@ find_path(LIBSNDFILE_INCLUDE_DIR
       /opt/local/include
 )
 
+#find the packages
+find_package(OpenGL REQUIRED)
+find_package(GLUT REQUIRED)
+
 # Library
 find_library(LIBSNDFILE_LIBRARY
 	NAMES 
@@ -25,6 +27,12 @@ find_library(LIBSNDFILE_LIBRARY
       /usr/lib 
       /usr/local/lib
       /opt/local/lib
+)
+
+include_directories(HelloAudio 
+      ${CMAKE_CURRENT_SOURCE_DIR}/include/
+      ${OPENGL_INCLUDE_DIRS} 
+      ${GLUT_INCLUDE_DIRS}
 )
 
 set(LIBSNDFILE_INCLUDE_DIR ${LIBSNDFILE_INCLUDE_DIR})
@@ -40,8 +48,27 @@ else(LIBSNDFILE_FOUND)
   message(STATUS "LibSND not found")
 endif(LIBSNDFILE_FOUND)
 
+# Local header files here ONLY
+SET(TARGET_H
+    ../include/AudioHandler.h  
+    ../include/GuiHandler.h 
+   )
+
+# Local source files here
+SET(TARGET_SRC
+      ../src/AudioHandler.cpp 
+      ../src/GuiHandler.cpp
+      ../src/main.cpp 
+    )
+
+add_executable(HelloAudio ${TARGET_H} ${TARGET_SRC})      
+
+
 target_link_libraries(HelloAudio
     sndfile
+    ${OPENGL_LIBRARIES} 
+    ${GLUT_LIBRARY}
+
 )
   
 

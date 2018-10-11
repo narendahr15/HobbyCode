@@ -123,32 +123,86 @@ HelloAudio/fast:
 	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/build
 .PHONY : HelloAudio/fast
 
-main.o: main.cpp.o
+src/AudioHandler.o: src/AudioHandler.cpp.o
 
-.PHONY : main.o
+.PHONY : src/AudioHandler.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/AudioHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o
+.PHONY : src/AudioHandler.cpp.o
 
-main.i: main.cpp.i
+src/AudioHandler.i: src/AudioHandler.cpp.i
 
-.PHONY : main.i
+.PHONY : src/AudioHandler.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/AudioHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.i
+.PHONY : src/AudioHandler.cpp.i
 
-main.s: main.cpp.s
+src/AudioHandler.s: src/AudioHandler.cpp.s
 
-.PHONY : main.s
+.PHONY : src/AudioHandler.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/AudioHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.s
+.PHONY : src/AudioHandler.cpp.s
+
+src/GuiHandler.o: src/GuiHandler.cpp.o
+
+.PHONY : src/GuiHandler.o
+
+# target to build an object file
+src/GuiHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o
+.PHONY : src/GuiHandler.cpp.o
+
+src/GuiHandler.i: src/GuiHandler.cpp.i
+
+.PHONY : src/GuiHandler.i
+
+# target to preprocess a source file
+src/GuiHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.i
+.PHONY : src/GuiHandler.cpp.i
+
+src/GuiHandler.s: src/GuiHandler.cpp.s
+
+.PHONY : src/GuiHandler.s
+
+# target to generate assembly for a file
+src/GuiHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.s
+.PHONY : src/GuiHandler.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +213,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HelloAudio"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/AudioHandler.o"
+	@echo "... src/AudioHandler.i"
+	@echo "... src/AudioHandler.s"
+	@echo "... src/GuiHandler.o"
+	@echo "... src/GuiHandler.i"
+	@echo "... src/GuiHandler.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

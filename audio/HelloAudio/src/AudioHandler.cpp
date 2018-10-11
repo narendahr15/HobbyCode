@@ -5,7 +5,9 @@
 #include <iostream>
 
 #include <sndfile.hh>
+#include "AudioHandler.h"
 
+namespace {
 const uint32_t  BUFFER_LEN = 1024;
 const uint32_t  AUDIO_CHANNELS = 2;
 const uint32_t  SAMPLE_RATE = 44100;
@@ -13,9 +15,13 @@ const uint32_t  SAMPLE_COUNT = SAMPLE_RATE * 1;
 const float     AMPLITUDE = 1.0 * 0x7F000000;
 const float     LEFT_FREQ = 344.0 / SAMPLE_RATE;
 const float     RIGHT_FREQ = 466.0 / SAMPLE_RATE;
+}
 
-static void
-createSineFile(
+/*
+* Function for creating a sine wave
+*/
+void 
+AudioHandler::createSineWaveFile(
     const char* fileName, 
     int format
 ) {
@@ -34,17 +40,20 @@ createSineFile(
     memset(buffer, 0, sizeof(buffer));
 
     for (int k = 0 ; k < SAMPLE_COUNT ; k++)
-    {	buffer [2 * k] = AMPLITUDE * sin (LEFT_FREQ * 2 * k * M_PI) ;
-        buffer [2 * k + 1] = AMPLITUDE * sin (RIGHT_FREQ * 2 * k * M_PI) ;
+    {	buffer [2 * k] = AMPLITUDE * tan (LEFT_FREQ * 2 * k * M_PI) ;
+        buffer [2 * k + 1] = AMPLITUDE * tan (RIGHT_FREQ * 2 * k * M_PI) ;
         // std::cout<<buffer[2 * k]<<" "<<buffer[2 * k + 1]<<std::endl;
     }
 
     sf_count_t fileBytes = file.write(buffer, 2 * SAMPLE_COUNT);
-    printf("Created a new file %s with %ld bytes with error %s\n", fileName, fileBytes, file.strError());                               
+    printf("Created a new file %s with %ld bytes with error %s\n", fileName, fileBytes, file.strError());
 }
 
-static void
-readFile(
+/*
+* Function to read the wav files
+*/
+void
+AudioHandler::readWavefile(
     const char* fileName
 ) {
     static int buffer[2 * SAMPLE_COUNT];
@@ -59,13 +68,4 @@ readFile(
     //     std::cout<<buffer[2 * k]<<" "<<buffer[2 * k + 1]<<std::endl;
     // }
     puts("");
-}
-
-int main() {
-    const char* fileName = "test.wav";
-    puts("Example for using snd file\n");
-
-    createSineFile(fileName, SF_FORMAT_WAV | SF_FORMAT_PCM_24);
-    readFile(fileName);//"testSample.wav");
-    return 0;
 }

@@ -57,41 +57,98 @@ include CMakeFiles/HelloAudio.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HelloAudio.dir/flags.make
 
-CMakeFiles/HelloAudio.dir/main.cpp.o: CMakeFiles/HelloAudio.dir/flags.make
-CMakeFiles/HelloAudio.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HelloAudio.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloAudio.dir/main.cpp.o -c /home/manimoha/Documents/hobby/audio/HelloAudio/main.cpp
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o: CMakeFiles/HelloAudio.dir/flags.make
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o: ../src/AudioHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o -c /home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.cpp
 
-CMakeFiles/HelloAudio.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloAudio.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/manimoha/Documents/hobby/audio/HelloAudio/main.cpp > CMakeFiles/HelloAudio.dir/main.cpp.i
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.cpp > CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.i
 
-CMakeFiles/HelloAudio.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloAudio.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manimoha/Documents/hobby/audio/HelloAudio/main.cpp -o CMakeFiles/HelloAudio.dir/main.cpp.s
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.cpp -o CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.s
 
-CMakeFiles/HelloAudio.dir/main.cpp.o.requires:
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.requires:
 
-.PHONY : CMakeFiles/HelloAudio.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.requires
 
-CMakeFiles/HelloAudio.dir/main.cpp.o.provides: CMakeFiles/HelloAudio.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/HelloAudio.dir/main.cpp.o.provides
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.provides: CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.provides.build
+.PHONY : CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.provides
 
-CMakeFiles/HelloAudio.dir/main.cpp.o.provides.build: CMakeFiles/HelloAudio.dir/main.cpp.o
+CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.provides.build: CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o
+
+
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o: CMakeFiles/HelloAudio.dir/flags.make
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o: ../src/GuiHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o -c /home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.cpp
+
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.cpp > CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.i
+
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manimoha/Documents/hobby/audio/HelloAudio/src/GuiHandler.cpp -o CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.s
+
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.requires:
+
+.PHONY : CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.requires
+
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.provides: CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.provides.build
+.PHONY : CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.provides
+
+CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.provides.build: CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o
+
+
+CMakeFiles/HelloAudio.dir/src/main.cpp.o: CMakeFiles/HelloAudio.dir/flags.make
+CMakeFiles/HelloAudio.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HelloAudio.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloAudio.dir/src/main.cpp.o -c /home/manimoha/Documents/hobby/audio/HelloAudio/src/main.cpp
+
+CMakeFiles/HelloAudio.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloAudio.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/manimoha/Documents/hobby/audio/HelloAudio/src/main.cpp > CMakeFiles/HelloAudio.dir/src/main.cpp.i
+
+CMakeFiles/HelloAudio.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloAudio.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manimoha/Documents/hobby/audio/HelloAudio/src/main.cpp -o CMakeFiles/HelloAudio.dir/src/main.cpp.s
+
+CMakeFiles/HelloAudio.dir/src/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/HelloAudio.dir/src/main.cpp.o.requires
+
+CMakeFiles/HelloAudio.dir/src/main.cpp.o.provides: CMakeFiles/HelloAudio.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/HelloAudio.dir/build.make CMakeFiles/HelloAudio.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/HelloAudio.dir/src/main.cpp.o.provides
+
+CMakeFiles/HelloAudio.dir/src/main.cpp.o.provides.build: CMakeFiles/HelloAudio.dir/src/main.cpp.o
 
 
 # Object files for target HelloAudio
 HelloAudio_OBJECTS = \
-"CMakeFiles/HelloAudio.dir/main.cpp.o"
+"CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o" \
+"CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o" \
+"CMakeFiles/HelloAudio.dir/src/main.cpp.o"
 
 # External object files for target HelloAudio
 HelloAudio_EXTERNAL_OBJECTS =
 
-HelloAudio: CMakeFiles/HelloAudio.dir/main.cpp.o
+HelloAudio: CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o
+HelloAudio: CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o
+HelloAudio: CMakeFiles/HelloAudio.dir/src/main.cpp.o
 HelloAudio: CMakeFiles/HelloAudio.dir/build.make
+HelloAudio: /usr/lib/x86_64-linux-gnu/libGL.so
+HelloAudio: /usr/lib/x86_64-linux-gnu/libGLU.so
+HelloAudio: /usr/lib/x86_64-linux-gnu/libglut.so
+HelloAudio: /usr/lib/x86_64-linux-gnu/libXmu.so
+HelloAudio: /usr/lib/x86_64-linux-gnu/libXi.so
 HelloAudio: CMakeFiles/HelloAudio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HelloAudio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable HelloAudio"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloAudio.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +156,9 @@ CMakeFiles/HelloAudio.dir/build: HelloAudio
 
 .PHONY : CMakeFiles/HelloAudio.dir/build
 
-CMakeFiles/HelloAudio.dir/requires: CMakeFiles/HelloAudio.dir/main.cpp.o.requires
+CMakeFiles/HelloAudio.dir/requires: CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o.requires
+CMakeFiles/HelloAudio.dir/requires: CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o.requires
+CMakeFiles/HelloAudio.dir/requires: CMakeFiles/HelloAudio.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/HelloAudio.dir/requires
 
