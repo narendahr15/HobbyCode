@@ -147,6 +147,7 @@ HelloAudio: /usr/lib/x86_64-linux-gnu/libGLU.so
 HelloAudio: /usr/lib/x86_64-linux-gnu/libglut.so
 HelloAudio: /usr/lib/x86_64-linux-gnu/libXmu.so
 HelloAudio: /usr/lib/x86_64-linux-gnu/libXi.so
+HelloAudio: /usr/lib/x86_64-linux-gnu/libasound.so
 HelloAudio: CMakeFiles/HelloAudio.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manimoha/Documents/hobby/audio/HelloAudio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable HelloAudio"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloAudio.dir/link.txt --verbose=$(VERBOSE)

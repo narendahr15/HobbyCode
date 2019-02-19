@@ -1,1 +1,2 @@
-audio/HelloAudio/build
+./audio/HelloAudio/build/*
+./opengl/helloworld/build/*

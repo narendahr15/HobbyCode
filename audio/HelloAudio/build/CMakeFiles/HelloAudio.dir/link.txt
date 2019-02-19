@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++11  -rdynamic CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o CMakeFiles/HelloAudio.dir/src/main.cpp.o  -o HelloAudio -lsndfile -lGL -lGLU -lglut -lXmu -lXi 
+/usr/bin/c++  -std=c++11  -rdynamic CMakeFiles/HelloAudio.dir/src/AudioHandler.cpp.o CMakeFiles/HelloAudio.dir/src/GuiHandler.cpp.o CMakeFiles/HelloAudio.dir/src/main.cpp.o  -o HelloAudio -lsndfile -lGL -lGLU -lglut -lXmu -lXi -lasound 

@@ -21,6 +21,14 @@ cmath
 -
 iostream
 -
+tuple
+-
+unistd.h
+-
+fcntl.h
+-
+alsa/asoundlib.h
+-
 sndfile.hh
 -
 AudioHandler.h
@@ -40,6 +48,8 @@ cstdint
 cmath
 -
 iostream
+-
+tuple
 -
 AudioHandler.h
 /home/manimoha/Documents/hobby/audio/HelloAudio/src/AudioHandler.h

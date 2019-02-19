@@ -17,6 +17,7 @@ find_path(LIBSNDFILE_INCLUDE_DIR
 #find the packages
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
+find_package(ALSA REQUIRED)
 
 # Library
 find_library(LIBSNDFILE_LIBRARY
@@ -33,10 +34,15 @@ include_directories(HelloAudio
       ${CMAKE_CURRENT_SOURCE_DIR}/include/
       ${OPENGL_INCLUDE_DIRS} 
       ${GLUT_INCLUDE_DIRS}
+      ${ALSA_INCLUDE_DIR}
 )
 
 set(LIBSNDFILE_INCLUDE_DIR ${LIBSNDFILE_INCLUDE_DIR})
 set(LIBSNDFILE_LIBRARY ${LIBSNDFILE_LIBRARY})
+
+if(NOT ALSA_FOUND)
+  message(STATUS "ALSA not found")
+endif(NOT ALSA_FOUND)
 
 if(LIBSNDFILE_INCLUDE_DIR AND LIBSNDFILE_LIBRARY)
   set(LIBSNDFILE_FOUND TRUE)
@@ -68,6 +74,7 @@ target_link_libraries(HelloAudio
     sndfile
     ${OPENGL_LIBRARIES} 
     ${GLUT_LIBRARY}
+    ${ALSA_LIBRARY}
 
 )
   

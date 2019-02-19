@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <cmath>
 #include <iostream>
+#include <tuple>
 
 #include "AudioHandler.h"
 #include "GuiHandler.h"
@@ -15,5 +16,10 @@ int main() {
     AudioHandler audioHandler;
     audioHandler.createSineWaveFile(fileName, SF_FORMAT_WAV | SF_FORMAT_PCM_24);
     audioHandler.readWavefile(fileName);//"testSample.wav");
+
+    int error = 0; uint32_t currentVolume = 0;
+    std::tie(error, currentVolume) = audioHandler.getVolume();
+    std::cout <<"Current Master volume is : " << currentVolume <<std::endl;
+    
     return 0;
 }

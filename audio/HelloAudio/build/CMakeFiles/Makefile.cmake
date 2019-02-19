@@ -22,6 +22,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.10/Modules/Compiler/GNU-C.cmake"
   "/usr/local/share/cmake-3.10/Modules/Compiler/GNU-CXX.cmake"
   "/usr/local/share/cmake-3.10/Modules/Compiler/GNU.cmake"
+  "/usr/local/share/cmake-3.10/Modules/FindALSA.cmake"
   "/usr/local/share/cmake-3.10/Modules/FindGLUT.cmake"
   "/usr/local/share/cmake-3.10/Modules/FindOpenGL.cmake"
   "/usr/local/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake"
